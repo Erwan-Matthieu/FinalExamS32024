@@ -19,3 +19,10 @@ JOIN
     ) AS recent_salary rs
 ON
     sfc.id_ceuilleur = rs.id_ceuilleur;
+
+SELECT DISTINCT
+    sfd.nom
+FROM
+    serenitea_farms_depenses sfd
+GROUP BY
+    sfd.nom;
