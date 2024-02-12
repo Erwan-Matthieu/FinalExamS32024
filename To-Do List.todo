@@ -1,0 +1,73 @@
+
+SereniTeaFarms Partie 1 : 
+    Login :
+        Frontend :
+            ☐ Insertion de l'identifiant et du mot de passe
+        Backend :
+            ☐  Vérification si l'entité entrant est admin ou un utilisateur lambda
+            ☐ Redirigé vers la page correspondant à l'entité
+        
+    Admin : 
+        Gestion de variété de thé :
+            ☐ Création d'une table serenitea_farms_the(variete,occupation,rendement)
+
+            Frontend :
+                Création d'un formulaire pour insérer les valeurs :
+                    ☐ Champ pour le nom de la variété
+                    ☐ Champ pour l'occupation (par pied)
+                    ☐ Champ pour le rendement (en kg par mois)
+
+            Backend :
+                Insertion vers la table serenitea_farms_the :
+                    ☐ Verification si la variété est disponible
+
+        Gestion des parcelles :
+            ☐ Création d'une table serenitea_farms_parcelles(reference,surface,variete)
+
+            Frontend :
+                Création d'un formulaire pour insérer les valeurs :
+                    ☐ Champ pour la surface
+                    ☐ Champ en dropdown pour le choix de la variété
+                
+            Backend :
+                ☐ Insertion vers la table serenitea_farms_parcelles
+
+        Gestion des ceuilleurs :
+            ☐ Création d'une table serenitea_farms_ceuilleurs(id_ceuilleur,nom,prenom,date_de_naissance,date_d_embauche,date_de_depart)
+
+            Frontend :
+                Création d'un formulaire pour insérer les valeurs :
+                    ☐ Champ pour le nom
+                    ☐ Champ pour le prenom
+                    ☐ Champ pour la date de naissance
+                    ☐ Champ pour la date d'embauche
+                    ☐ Champ pour la date de départ
+                
+            Backend :
+                ☐ Insertion des données vers la table serenitea_farms_ceuilleurs
+            
+        Gestion des catégories de dépenses :
+            ☐ Création d'une table serenitea_farms_depenses(nom,date,montant)
+            
+            Frontend :
+                Création d'un formulaire pour insérer les valeurs :
+                    ☐ Champ pour le nom
+                    ☐ Champ pour la date
+                    ☐ Champ pour le montant
+                
+            Backend :
+                ☐ Insertion vers la table serenitea_farms_depenses
+        
+        Configuration montant salaire par kg des ceuilleurs :
+            ☐ Création d'une table serenitea_farms_historique_salaire(date,id_ceuilleur,montant)
+            ☐ Création d'une view v_serenitea_farms_salaires(id_ceuilleur,montant) en prenant le montant le plus récent pour chaque ceuilleurs
+
+            Frontend :
+                Création d'un formulaire pour insérer les valeurs :
+                    ☐ Champ en dropdown pour l'id_ceuilleur
+                    ☐ Champ pour le salaire
+            
+            Backend :
+                ☐ Insertion vers la table serenitea_farms_historique_salaire
+
+                    
