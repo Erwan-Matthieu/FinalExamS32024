@@ -11,9 +11,10 @@ SereniTeaFarms Partie 1 :
             ☐ Redirigé vers la page correspondant à l'entité
         
         ☐ Intégration
+    
     Admin : 
         Gestion de variété de thé :
-            ☐ Création d'une table serenitea_farms_the(variete,occupation,rendement)
+            ✔ Création d'une table serenitea_farms_the(variete,occupation,rendement) @done(24-02-12 15:03)
 
             Frontend :
                 ☐ Création d'un formulaire pour insérer les valeurs :
@@ -28,7 +29,7 @@ SereniTeaFarms Partie 1 :
             ☐ Intégration
 
         Gestion des parcelles :
-            ☐ Création d'une table serenitea_farms_parcelles(reference,surface,variete)
+            ✔ Création d'une table serenitea_farms_parcelles(reference,surface,variete) @started(24-02-12 15:04) @done(24-02-12 15:11) @lasted(7m20s)
 
             Frontend :
                 Création d'un formulaire pour insérer les valeurs :
@@ -41,7 +42,7 @@ SereniTeaFarms Partie 1 :
             ☐ Intégration 
 
         Gestion des ceuilleurs :
-            ☐ Création d'une table serenitea_farms_ceuilleurs(id_ceuilleur,nom,prenom,date_de_naissance,date_d_embauche,date_de_depart)
+            ✔ Création d'une table serenitea_farms_ceuilleurs(id_ceuilleur,nom,prenom,date_de_naissance,date_d_embauche,date_de_depart) @started(24-02-12 15:11) @done(24-02-12 15:17) @lasted(6m25s)
 
             Frontend :
                 Création d'un formulaire pour insérer les valeurs :
@@ -57,7 +58,7 @@ SereniTeaFarms Partie 1 :
             ☐ Intégration 
         
         Gestion des catégories de dépenses :
-            ☐ Création d'une table serenitea_farms_depenses(nom,date,montant)
+            ✔ Création d'une table serenitea_farms_depenses(nom,date,montant) @done(24-02-12 15:19)
             
             Frontend :
                 Création d'un formulaire pour insérer les valeurs :
@@ -72,8 +73,8 @@ SereniTeaFarms Partie 1 :
             ☐ Intégration 
 
         Configuration montant salaire par kg des ceuilleurs :
-            ☐ Création d'une table serenitea_farms_historique_salaire(date,id_ceuilleur,montant)
-            ☐ Création d'une view v_serenitea_farms_salaires(id_ceuilleur,montant) en prenant le montant le plus récent pour chaque ceuilleurs
+            ✔ Création d'une table serenitea_farms_historique_salaire(date,id_ceuilleur,montant) @started(24-02-12 15:19) @done(24-02-12 15:22) @lasted(3m52s)
+            ✔ Création d'une view v_serenitea_farms_salaires(id_ceuilleur,montant) en prenant le montant le plus récent pour chaque ceuilleurs @done(24-02-12 15:34)
 
             Frontend :
                 Création d'un formulaire pour insérer les valeurs :
@@ -84,3 +85,21 @@ SereniTeaFarms Partie 1 :
                 ☐ Insertion vers la table serenitea_farms_historique_salaire
 
             ☐ Intégration 
+
+    Utilisateur :
+        ☐ Page de saisie des ceuillettes 
+            ☐ Champ pour la date
+            ☐ Champ en dropdown pour choisir le ceuilleur
+            ☐ Champ en dropdown pour choisir la parcelle
+            ☐ Poid ceuilli + validation en AJAX
+
+        ☐ Page de saisie des dépenses
+            ☐ Champ pour la date
+            ☐ Champ en dropdown pour le choix catégorie dépense
+            ☐ Champ pour le montant
+
+        Page de résultat :
+            ☐  Global 
+                ☐ Poids total ceuillette
+                ☐ Poids restant sur les parcelles
+                ☐ Coût de revient/kg
