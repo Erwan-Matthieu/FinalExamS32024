@@ -7,14 +7,14 @@ SereniTeaFarms Partie 1 :
             ✔ Insertion de l'identifiant et du mot de passe @started(24-02-12 14:06) @done(24-02-12 14:51) @lasted(45m44s)
         
         Backend :
-            ☐ Vérification si l'entité entrant est admin ou un utilisateur lambda @started(24-02-12 14:07)
-            ☐ Redirigé vers la page correspondant à l'entité
+            ✔ Vérification si l'entité entrant est admin ou un utilisateur lambda @started(24-02-12 14:07) @done(24-02-12 16:13) @lasted(2h6m30s)
+            ✔ Redirigé vers la page correspondant à l'entité @done(24-02-12 16:13)
         
         ☐ Intégration
     
     Admin : 
         Gestion de variété de thé :
-            ✔ Création d'une table serenitea_farms_the(variete,occupation,rendement) @done(24-02-12 15:03)
+            ✔ Création d'une table serenitea_farms_the(nom,occupation,rendement) @done(24-02-12 15:03)
 
             Frontend :
                 ☐ Création d'un formulaire pour insérer les valeurs :
@@ -23,7 +23,7 @@ SereniTeaFarms Partie 1 :
                     ☐ Champ pour le rendement (en kg par mois)
 
             Backend :
-                Insertion vers la table serenitea_farms_the :
+                ☐ Insertion vers la table serenitea_farms_the @started(24-02-12 16:21)
                     ☐ Verification si la variété est disponible
 
             ☐ Intégration
