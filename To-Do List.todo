@@ -10,7 +10,7 @@ SereniTeaFarms Partie 1 :
             ✔ Vérification si l'entité entrant est admin ou un utilisateur lambda @started(24-02-12 14:07) @done(24-02-12 16:13) @lasted(2h6m30s)
             ✔ Redirigé vers la page correspondant à l'entité @done(24-02-12 16:13)
         
-        ☐ Intégration
+        ✔ Intégration @started(24-02-12 16:23) @done(24-02-12 17:28) @lasted(1h5m25s)
     
     Admin : 
         Gestion de variété de thé :
@@ -23,8 +23,8 @@ SereniTeaFarms Partie 1 :
                     ☐ Champ pour le rendement (en kg par mois)
 
             Backend :
-                ☐ Insertion vers la table serenitea_farms_the @started(24-02-12 16:21)
-                    ☐ Verification si la variété est disponible
+                ✔ Insertion vers la table serenitea_farms_the @started(24-02-12 16:21) @done(24-02-12 17:26) @lasted(1h5m1s)
+                    ✔ Verification si la variété est disponible @done(24-02-12 17:26)
 
             ☐ Intégration
 
@@ -58,17 +58,14 @@ SereniTeaFarms Partie 1 :
             ☐ Intégration 
         
         Gestion des catégories de dépenses :
-            ✔ Création d'une table serenitea_farms_depenses(nom,date,montant) @done(24-02-12 15:19)
+            ☐ Création d'une table serenitea_farms_categories_depenses(nom)
             
             Frontend :
-                Création d'un formulaire pour insérer les valeurs :
-                    ☐ Champ pour le nom
-                    ☐ Champ pour la date
-                    ☐ Champ pour le montant
-                
+                ☐ Champ pour le nom de la catégorie de la dépense
+
             Backend :
-                ☐ Insertion vers la table serenitea_farms_depenses
-        
+                ☐ Vérification si le nom est disponible
+                ☐ Insèrtion dans la table serenitea_farms_categories_depenses
 
             ☐ Intégration 
 
@@ -87,19 +84,103 @@ SereniTeaFarms Partie 1 :
             ☐ Intégration 
 
     Utilisateur :
-        ☐ Page de saisie des ceuillettes 
-            ☐ Champ pour la date
-            ☐ Champ en dropdown pour choisir le ceuilleur
-            ☐ Champ en dropdown pour choisir la parcelle
-            ☐ Poid ceuilli + validation en AJAX
+        ☐ Création d'une table serenitea_farms_ceuillettes(date,id_ceuilleur,reference,poids)
+        Frontend : 
+            ☐ Page de saisie des ceuillettes 
+                ☐ Champ pour la date
+                ☐ Champ en dropdown pour choisir le ceuilleur
+                ☐ Champ en dropdown pour choisir la parcelle
+                ☐ Poid ceuilli + validation en AJAX
+        Backend :
+            ☐ Insertion des valeurs dans la table
+        
+        ☐ Intégration
 
-        ☐ Page de saisie des dépenses
-            ☐ Champ pour la date
-            ☐ Champ en dropdown pour le choix catégorie dépense
-            ☐ Champ pour le montant
+        ✔ Création d'une table serenitea_farms_depenses(nom,date,montant) @done(24-02-12 15:19)
+        
+        Frontend :
+            Création d'un formulaire pour insérer les valeurs :
+                ☐ Champ pour le nom
+                ☐ Champ pour la date
+                ☐ Champ pour le montant
+            
+        Backend :
+            ☐ Insertion vers la table serenitea_farms_depenses
+
+        ☐ Intégration
 
         Page de résultat :
-            ☐  Global 
-                ☐ Poids total ceuillette
-                ☐ Poids restant sur les parcelles
-                ☐ Coût de revient/kg
+            Frontent :
+                ☐  Global 
+                    ☐ Champ pour la date de début
+                    ☐ Champ pour la date de fin
+                    ☐ Poids total ceuillette
+                    ☐ Poids restant sur les parcelles
+                    ☐ Coût de revient/kg
+            
+            Backend :
+                ☐ Avoir le poids total ceuillette entre la date de début et la date de fin
+                ☐ Avoir le poids restant sur les parcelles entre la date de début et la date de fin
+                ☐ Avoir le coût de revient/kg entre la date de début et la date de fin
+            
+            ☐ Intégration
+
+SereneTea Farms Partie 2 :
+    Admin :
+        Saison :
+            Frontend :
+                ☐ Choisir grâce à une dropdown la variété
+                ☐ Selection grâce à <radio> la saison de régénération des thé
+
+            Backend :
+                ☐ Alterer la table serenitea_farms_the pour rajouter une colonne saison
+                ☐ Mettre à jour la saison selon la variété séléctionnée
+        
+            ☐ Intégration
+        
+        Gestion du salaire d'un ceuilleur :
+            ☐ Création d'une table serenitea_farms_poids_min_bonus_malus(id_ceuilleur,date,poids_min,bonus,malus)
+
+            Frontend :
+                ☐ Champ en dropdown pour choisir le ceuilleur
+                ☐ Champ pour le poids minimal journalier
+                ☐ Champ pour le bonus en % si le poids est supérieur au poids minimal
+                ☐ Champ pour le malus en % si le poids est inférieur au poids minimal
+            
+            Backend :
+                ☐ Insertion dans la table serenitea_farms_poids_min_bonus_malus
+            
+            ☐ Intégration
+    
+    Utilisateur :
+        Liste de paiement :
+            ☐ Création d'un view v_serenitea_farms_paiement(nom_ceuilleur,poids,bonus,malus,date,montant)
+
+            Frontend:
+                ☐ Champ pour la date de début
+                ☐ Champ pour la date de fin
+                ☐ Création d'une table
+                    - Date
+                    - nom ceuilleur
+                    - poids
+                    - bonus en %
+                    - malus en %
+                    - montant paiement
+            
+            Backend :
+                ☐ Getter les données demandées
+            
+            ☐ Intégration
+
+        Page de résultat :
+            Utilisé la même page que celle de la partie 1
+
+            Frontend :
+                ☐ Montant des ventes
+                ☐ Montant des dépenses
+                ☐ Bénéfice
+            
+            Backend :
+                ☐ Getter les données correspondants
+
+            ☐ Intégration
