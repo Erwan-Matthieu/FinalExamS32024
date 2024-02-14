@@ -1,0 +1,1 @@
+ALTER TABLE serenitea_farms_utilisateurs DROP PRIMARY KEY, DROP COLUMN id_user;

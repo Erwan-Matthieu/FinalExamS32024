@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-
+<style>
+  
+</style>
 <head>
-    <script src="../assets/js/color-modes.js"></script>
+    <script src="../../assets/js/color-modes.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Profile - Brand</title>
@@ -20,12 +22,10 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" onclick="generatePartOfHTML('../../pages/admin/variete.html')"><a class="nav-link"><i class="fas fa-tachometer-alt"></i><span>Gestion Variete de the</span></a></li>
-                    <li class="nav-item" onclick="generatePartOfHTML('../../pages/admin/parcelle.html'); getVarietiesList()"><a class="nav-link"><i class="fas fa-tachometer-alt"></i><span>Gestion de parcelles</span></a></li>
-                    <li class="nav-item" onclick="generatePartOfHTML('../../pages/admin/ceuilleurs.html')"><a class="nav-link"><i class="fas fa-tachometer-alt"></i><span>Gestion de ceuilleurs</span></a></li>
-                    <li class="nav-item" onclick="generatePartOfHTML('../../pages/admin/depense.html')"><a class="nav-link"><i class="fas fa-tachometer-alt"></i><span>Gestion de categories de depense</span></a></li>
-                    <li class="nav-item" onclick="generatePartOfHTML('../../pages/admin/')"><a class="nav-link"><i class="fas fa-tachometer-alt"></i><span>Salaire</span></a></li>
-                    <li class="nav-item" class="nav-link" href="../Login.php"><i class="far fa-user-circle"></i><span>Login</span></a></li> 
+                    <li class="nav-item" id="1"><a class="nav-link" onclick="generatePartOfHTML('../../pages/others/ceuilleur.html')"><i class="fas fa-tachometer-alt"></i><span>Ceuillettes</span></a></li>
+                    <li class="nav-item" id="2"><a class="nav-link" onclick="generatePartOfHTML('../../pages/others/depense.html')"><i class="fas fa-tachometer-alt"></i><span>Depense</span></a></li>
+                    <li class="nav-item" id="3"><a class="nav-link" onclick="generatePartOfHTML('../../pages/others/resultat.html')"><i class="fas fa-tachometer-alt"></i><span>Resultat</span></a></li>
+                    <li class="nav-item" id="6"><a class="nav-link" href="../Login.php"><i class="far fa-user-circle"></i><span>Login</span></a></li> 
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -132,11 +132,14 @@
                     </div>
                 </nav>
                 <!---Mampiditra anilay page  -->
-                        <div id="admin_home_center">
-                        </div>
+                     
+                                          
+          <h3 style="text-align: center; color: aqua; ">Comptes Utilisateurs</h3>                             
+          
+                <div id="User_Body_Content"></div>
 
             <!--- footers rehetra   -->
-               <!--- footers rehetra   -->
+                <!--- footers rehetra   -->
             <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
                 <symbol id="bootstrap" viewBox="0 0 118 94">
                   <title>Bootstrap</title>
@@ -164,10 +167,10 @@
                   </ul>
                 </footer>
               </div>
+               
 
 
-    <script src="../../inc/js/Functions.js"></script>
-    <script src="../../inc/js/AdminHomeFunction.js"></script>
+    <script src="../../inc/js/UserHomeFunctions.js"></script>
     <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>            
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../assets/js/bs-init.js"></script>

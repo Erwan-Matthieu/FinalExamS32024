@@ -77,7 +77,7 @@
                     <p class="text-center small" _msttexthash="5534230" _msthash="3">Entrez votre nom d’utilisateur et votre mot de passe pour vous connecter</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" method="post" novalidate="">
+                  <form class="row g-3 needs-validation" method="post" action="../inc/php/TraitementLogin.php" novalidate="">
 
                     <div class="col-12">
                       <label for="yourUsername" class="form-label" _msttexthash="1486862" _msthash="4">Nom d’utilisateur</label>
@@ -120,6 +120,7 @@
               </div>
             </div>     
 </div>
+<script src="../inc/js/LoginFunctions.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/bs-init.js"></script>
 <script src="../assets/js/theme.js"></script>

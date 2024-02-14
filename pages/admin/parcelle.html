@@ -1,0 +1,27 @@
+
+                <!---Mampiditra anilay page  -->
+            <div id="roro">
+                <div class="card">
+                    <div class="card-body">
+                      <h3 class="card-title" style="text-align: center;">PARCELLES</h3>
+        
+                <form class="row g-3" method="post" action="../../inc/php/TraitementParcelle.php">
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="References" name="reference">
+                  </div>
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" placeholder="Surface integre" name="area">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="varietiesSelect" class="form-label">State</label>
+                        <select id="varietiesSelect" class="form-select" name="variety">
+                        </select>
+                      </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Valider</button>
+                      <button type="reset" class="btn btn-secondary">Repeter</button>
+                    </div>
+                  </form>
+                </div>
+                  <!-- End No Labels Form -->

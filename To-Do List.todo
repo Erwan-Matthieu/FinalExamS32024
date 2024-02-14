@@ -17,45 +17,44 @@ SereniTeaFarms Partie 1 :
             ✔ Création d'une table serenitea_farms_the(nom,occupation,rendement) @done(24-02-12 15:03)
 
             Frontend :
-                ☐ Création d'un formulaire pour insérer les valeurs :
-                    ☐ Champ pour le nom de la variété
-                    ☐ Champ pour l'occupation (par pied)
-                    ☐ Champ pour le rendement (en kg par mois)
+                ✔ Création d'un formulaire pour insérer les valeurs : @done(24-02-13 09:01)
+                    ✔ Champ pour le nom de la variété @done(24-02-13 09:01)
+                    ✔ Champ pour l'occupation (par pied) @done(24-02-13 09:01)
+                    ✔ Champ pour le rendement (en kg par mois) @done(24-02-13 09:01)
 
             Backend :
                 ✔ Insertion vers la table serenitea_farms_the @started(24-02-12 16:21) @done(24-02-12 17:26) @lasted(1h5m1s)
                     ✔ Verification si la variété est disponible @done(24-02-12 17:26)
 
-            ☐ Intégration
+            ✔ Intégration @started(24-02-13 14:20) @done(24-02-13 15:20) @lasted(1h59s)
 
         Gestion des parcelles :
             ✔ Création d'une table serenitea_farms_parcelles(reference,surface,variete) @started(24-02-12 15:04) @done(24-02-12 15:11) @lasted(7m20s)
 
             Frontend :
                 Création d'un formulaire pour insérer les valeurs :
-                    ☐ Champ pour la surface
-                    ☐ Champ en dropdown pour le choix de la variété
+                    ✔ Champ pour la surface @done(24-02-13 09:02)
+                    ✔ Champ en dropdown pour le choix de la variété @done(24-02-13 09:02)
                 
             Backend :
-                ☐ Insertion vers la table serenitea_farms_parcelles
+                ✔ Insertion vers la table serenitea_farms_parcelles @done(24-02-13 09:03)
 
-            ☐ Intégration 
+            ✔ Intégration @started(24-02-13 15:21) @done(24-02-13 17:33) @lasted(2h12m32s)
 
         Gestion des ceuilleurs :
             ✔ Création d'une table serenitea_farms_ceuilleurs(id_ceuilleur,nom,prenom,date_de_naissance,date_d_embauche,date_de_depart) @started(24-02-12 15:11) @done(24-02-12 15:17) @lasted(6m25s)
 
             Frontend :
                 Création d'un formulaire pour insérer les valeurs :
-                    ☐ Champ pour le nom
-                    ☐ Champ pour le prenom
-                    ☐ Champ pour la date de naissance
-                    ☐ Champ pour la date d'embauche
-                    ☐ Champ pour la date de départ
+                    ✔ Champ pour le nom @done(24-02-13 09:03)
+                    ✔ Champ pour le prenom @done(24-02-13 09:03)
+                    ✔ Champ pour la date de naissance @done(24-02-13 09:03)
+                    ✔ Champ pour la date d'embauche @done(24-02-13 09:03)
                 
             Backend :
-                ☐ Insertion des données vers la table serenitea_farms_ceuilleurs
+                ✔ Insertion des données vers la table serenitea_farms_ceuilleurs @done(24-02-13 09:03)
             
-            ☐ Intégration 
+            ✔ Intégration @done(24-02-13 17:33)
         
         Gestion des catégories de dépenses :
             ☐ Création d'une table serenitea_farms_categories_depenses(nom)
@@ -67,7 +66,7 @@ SereniTeaFarms Partie 1 :
                 ☐ Vérification si le nom est disponible
                 ☐ Insèrtion dans la table serenitea_farms_categories_depenses
 
-            ☐ Intégration 
+            ✔ Intégration @done(24-02-13 17:33)
 
         Configuration montant salaire par kg des ceuilleurs :
             ✔ Création d'une table serenitea_farms_historique_salaire(date,id_ceuilleur,montant) @started(24-02-12 15:19) @done(24-02-12 15:22) @lasted(3m52s)
@@ -81,18 +80,18 @@ SereniTeaFarms Partie 1 :
             Backend :
                 ☐ Insertion vers la table serenitea_farms_historique_salaire
 
-            ☐ Intégration 
+            ✔ Intégration @done(24-02-13 17:33)
 
     Utilisateur :
-        ☐ Création d'une table serenitea_farms_ceuillettes(date,id_ceuilleur,reference,poids)
+        ✔ Création d'une table serenitea_farms_ceuillettes(date,id_ceuilleur,reference,poids) @done(24-02-13 09:05)
         Frontend : 
-            ☐ Page de saisie des ceuillettes 
-                ☐ Champ pour la date
-                ☐ Champ en dropdown pour choisir le ceuilleur
-                ☐ Champ en dropdown pour choisir la parcelle
-                ☐ Poid ceuilli + validation en AJAX
+            ✔ Page de saisie des ceuillettes @done(24-02-13 15:31)
+                ✔ Champ pour la date @done(24-02-13 15:31)
+                ✔ Champ en dropdown pour choisir le ceuilleur @done(24-02-13 15:31)
+                ✔ Champ en dropdown pour choisir la parcelle @done(24-02-13 15:31)
+                ✔ Poid ceuilli + validation en AJAX @done(24-02-13 15:31)
         Backend :
-            ☐ Insertion des valeurs dans la table
+            ☐ Insertion des valeurs dans la table 
         
         ☐ Intégration
 
@@ -100,9 +99,9 @@ SereniTeaFarms Partie 1 :
         
         Frontend :
             Création d'un formulaire pour insérer les valeurs :
-                ☐ Champ pour le nom
-                ☐ Champ pour la date
-                ☐ Champ pour le montant
+                 ✔ Champ pour le nom @done(24-02-13 15:31)
+                 ✔ Champ pour la date @done(24-02-13 15:31)
+                 ✔ Champ pour le montant @done(24-02-13 15:31)
             
         Backend :
             ☐ Insertion vers la table serenitea_farms_depenses
@@ -129,23 +128,21 @@ SereneTea Farms Partie 2 :
     Admin :
         Saison :
             Frontend :
-                ☐ Choisir grâce à une dropdown la variété
-                ☐ Selection grâce à <radio> la saison de régénération des thé
+                ✔ Selection grâce à <radio> la saison de régénération des thé @done(24-02-13 10:51)
 
             Backend :
-                ☐ Alterer la table serenitea_farms_the pour rajouter une colonne saison
                 ☐ Mettre à jour la saison selon la variété séléctionnée
         
             ☐ Intégration
         
         Gestion du salaire d'un ceuilleur :
-            ☐ Création d'une table serenitea_farms_poids_min_bonus_malus(id_ceuilleur,date,poids_min,bonus,malus)
+            ✔ Création d'une table serenitea_farms_poids_min_bonus_malus(id_ceuilleur,date,poids_min,bonus,malus) @started(24-02-13 08:08) @done(24-02-13 08:10) @lasted(2m38s)
 
             Frontend :
-                ☐ Champ en dropdown pour choisir le ceuilleur
-                ☐ Champ pour le poids minimal journalier
-                ☐ Champ pour le bonus en % si le poids est supérieur au poids minimal
-                ☐ Champ pour le malus en % si le poids est inférieur au poids minimal
+                ✔ Champ en dropdown pour choisir le ceuilleur @started(24-02-13 12:07) @done(24-02-13 13:25) @lasted(1h18m58s)
+                ✔ Champ pour le poids minimal journalier @started(24-02-13 12:07) @done(24-02-13 13:25) @lasted(1h18m58s)
+                ✔ Champ pour le bonus en % si le poids est supérieur au poids minimal @started(24-02-13 12:07) @done(24-02-13 13:25) @lasted(1h18m58s)
+                ✔ Champ pour le malus en % si le poids est inférieur au poids minimal @started(24-02-13 12:07) @done(24-02-13 13:25) @lasted(1h18m58s)
             
             Backend :
                 ☐ Insertion dans la table serenitea_farms_poids_min_bonus_malus
@@ -154,18 +151,19 @@ SereneTea Farms Partie 2 :
     
     Utilisateur :
         Liste de paiement :
-            ☐ Création d'un view v_serenitea_farms_paiement(nom_ceuilleur,poids,bonus,malus,date,montant)
+            ☐ Création d'une table serenitea_farms_paiements(id_ceuilleur,poids,date)
+            ☐ Création d'un view v_serenitea_farms_paiements(nom_ceuilleur,prenom_ceuilleur,poids,bonus,malus,date,montant)
 
             Frontend:
-                ☐ Champ pour la date de début
-                ☐ Champ pour la date de fin
-                ☐ Création d'une table
-                    - Date
-                    - nom ceuilleur
-                    - poids
-                    - bonus en %
-                    - malus en %
-                    - montant paiement
+                ✔ Champ pour la date de début @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                ✔ Champ pour la date de fin @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                ✔ Création d'une table @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                    ✔ Date @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                    ✔ nom ceuilleur @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                    ✔ poids @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                    ✔ bonus en % @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                    ✔ malus en % @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
+                    ✔ montant paiement @started(24-02-13 13:27) @done(24-02-13 15:31) @lasted(2h4m28s)
             
             Backend :
                 ☐ Getter les données demandées
@@ -176,10 +174,10 @@ SereneTea Farms Partie 2 :
             Utilisé la même page que celle de la partie 1
 
             Frontend :
-                ☐ Montant des ventes
-                ☐ Montant des dépenses
-                ☐ Bénéfice
-            
+                ✔ Montant des ventes @done(24-02-13 15:31)
+                ✔ Montant des dépenses @done(24-02-13 15:31)
+                ✔ Bénéfice @done(24-02-13 15:31)
+
             Backend :
                 ☐ Getter les données correspondants
 

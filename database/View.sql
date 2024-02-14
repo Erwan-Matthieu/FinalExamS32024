@@ -26,3 +26,11 @@ FROM
     serenitea_farms_depenses sfd
 GROUP BY
     sfd.nom;
+
+CREATE VIEW v_serenitea_farms_paiements AS
+SELECT
+    sfc.nom,
+    sfc.prenom,
+    sfp.poids,
+    sfpmbm.bonus,
+    
